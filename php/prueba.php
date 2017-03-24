@@ -12,10 +12,15 @@ require_once("class.consultas.php");
 // require_once("Persona.php");
 
 /* Para consultar Personas */
-$oDatosPersonas = new Persona;
-$personas_registradas = $oDatosPersonas->obtenerPersonas();
+try {
+	$oDatosPersonas = new Persona;
+	$personas_registradas = $oDatosPersonas->obtenerPersonas();
 
-print_r($personas_registradas);
+	print_r($personas_registradas);
+} catch (Exception $e) {
+	echo "Error: ".$e;
+}
+
 
 /* Para registrar Personas */
 // $oRegistroPersonas = new Persona;

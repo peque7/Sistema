@@ -1,6 +1,7 @@
 body{
     background: url(../images/fondo2.jpg)!important;
 }
+
 header{
     background: #fff;
     width: 100%;
@@ -11,7 +12,11 @@ header{
     border-bottom: 0px solid #000000!important;
     z-index: 100;
 }
-
+.marco {
+    width: 300px;
+    border: 2px solid gray;
+    border-radius: 4px;
+}
 tr{
     text-align: center;
 }
@@ -22,3 +27,54 @@ tr{
     margin-right: 5px;
     margin-left: 5px; 
 }
+.divSession{
+}
+.marco{
+    border: 2px solid gray;
+}
+.rotate1{
+    margin: 200px auto;
+    transform : rotate(2deg);
+    -moz-transform : rotate(2deg); /* Firefox */
+    -webkit-transform : rotate(2deg); /* Chrome - Safari */
+    -o-transform : rotate(2deg); /* Opera */
+}
+.rotate2{
+    padding: 15px;
+    transform : rotate(-2deg);
+    -moz-transform : rotate(-2deg); /* Firefox */
+    -webkit-transform : rotate(-2deg); /* Chrome - Safari */
+    -o-transform : rotate(-2deg); /* Opera *//
+}
+.formSession input{
+    display: block;
+    border-left: none;
+    border-right: none;
+    border-top: none;
+    border-bottom: 1px solid white;
+    background: transparent;
+    color: white!important;
+    font-size: 25px;
+    width: 100%;
+    margin: 10px 0px;
+    padding-left: 5px;
+}
+.formSession input:-webkit-autofill {
+    webkit-box-shadow: 0 0 0px 1000px #000 inset;
+    background-color: transparent!important;
+    -webkit-text-fill-color: #ffffff;
+    transition: background-color 5000s ease-in-out 0s;
+}
+.btnSession{
+    display: block;
+}
+.logoForm img{
+    background: gray;
+    border-radius: 100%;
+    height: 100px;
+    width: 100px;
+    text-align: center;
+    margin: 0 auto;
+    display: block;
+}
+

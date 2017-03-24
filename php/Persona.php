@@ -11,7 +11,7 @@
 		$this->personas = $oConectar->consultarBD($consulta,$valores);
 
 		return $this->personas;
-		print_r($this->personas);
+		// print_r($this->personas);
 	} //Termina funcion obtenerPersonas();
 
 	public function registrarPersonas($nombre,$apellido,$edad){

@@ -18,7 +18,7 @@
     // }
     session_start(); 
     // $_SESSION["USER"] = "jesus";
-    if (isset($_SESSION["USER"]) || true){ 
+    if (isset($_SESSION["USER"]) || false){ 
          if (isset($_GET['view'])) {
             if (file_exists('core/views/'.strtolower($_GET['view']).'/index.php')) {
                include ('core/views/'.strtolower($_GET['view']).'/index.php');
