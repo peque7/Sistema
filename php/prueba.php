@@ -13,10 +13,21 @@ require_once("class.consultas.php");
 
 /* Para consultar Personas */
 try {
+	$oConectar = new conectorDB;
+	if ($oConectar) {
+		$consulta = "SELECT * FROM cliente";
+
+		echo "Conexion exitosa";
+	}else{
+		echo "No se pudo conectar";
+	}
 	$oDatosPersonas = new Persona;
+	$oDatosPersonas2 = new Persona();
+	// $oDatosPersonas3 = new 'Persona';
+
 	$personas_registradas = $oDatosPersonas->obtenerPersonas();
 
-	print_r($personas_registradas);
+	print_r($oDatosPersonas2);
 } catch (Exception $e) {
 	echo "Error: ".$e;
 }

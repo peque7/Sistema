@@ -65,16 +65,29 @@ tr{
     -webkit-text-fill-color: #ffffff;
     transition: background-color 5000s ease-in-out 0s;
 }
+
 .btnSession{
-    display: block;
+    display: inline-block;
+    background: rgba(255, 0, 0, 0.70);
+    border-radius: 3px;
+    border: none;
+    color: #ffffff;
+    padding: 10px 20px;
+    font-size: 25px;
 }
-.logoForm img{
-    background: gray;
+.btnSession:hover{
+    background: rgba(255, 0, 0, .90);
+    cursor: pointer;
+}
+.btnSession i{
+
+}
+.logoForm i{
     border-radius: 100%;
-    height: 100px;
-    width: 100px;
     text-align: center;
     margin: 0 auto;
     display: block;
+    font-size: 150px;
+    color: rgba(255, 0, 0, 0.8);
 }
 
