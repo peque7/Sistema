@@ -16,12 +16,11 @@
   <link rel="stylesheet" href="template/app/css/dataTable.css">
   <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
   <link rel="stylesheet" href="template/app/css/font-awesome.min.css">
-  <link rel="stylesheet" href="template/app/css/topNav2.css">
+  
 
   <script src="template/app/js/jquery.min.js"></script>
   <script src="template/bootstrap/js/bootstrap.min.js"></script>
   <script src="template/app/js/dataTable.js"></script>
-  <script src="template/app/js/topNav2.js"></script>
 
 
   <title><?php echo APP_TITLE ?></title>

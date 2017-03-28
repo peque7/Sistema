@@ -33,7 +33,7 @@ tr{
     border: 2px solid gray;
 }
 .rotate1{
-    margin: 200px auto;
+    margin: 130px auto;
     transform : rotate(2deg);
     -moz-transform : rotate(2deg); /* Firefox */
     -webkit-transform : rotate(2deg); /* Chrome - Safari */
@@ -82,6 +82,9 @@ tr{
 .btnSession i{
 
 }
+.adsolu2{
+    display: none;
+}
 .logoForm i{
     border-radius: 100%;
     text-align: center;
@@ -90,4 +93,44 @@ tr{
     font-size: 150px;
     color: rgba(255, 0, 0, 0.8);
 }
-
+.menu{
+    position: relative;
+    width: 100%;
+    z-index: 1;
+    height: 110px;
+}
+.adsolu{
+    position: absolute;
+    right: 0px;
+}
+.adsolu2{
+    position: absolute;
+    right: 20px;
+    /*top: 110px;*/
+}
+.menu ul{
+    list-style-type: none;
+    display: inline-flex;
+    margin-bottom: 0px;
+    background: rgba(0, 0, 0, 0.85);
+    padding: 0!important;
+}
+.menu li{
+    float: none!important;
+    text-align: center;
+    display: inline-block;
+}
+.menu li:hover{
+        background: rgba(51, 122, 183, 0.5);
+}
+.menu a{
+}
+.menu i{
+    padding: 20px;
+}
+.btnMo{
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    border-radius: 100%;
+}

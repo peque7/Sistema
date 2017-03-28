@@ -1,24 +1,31 @@
 <?php 
-    require('core/core.php');
-    require('Conexion.php');
-    // $con = Conexion::con();
-    // $res = mysqli_query($con,"SELECT * FROM `estados`");
-    // print_r(mysqli_fetch_assoc($res));
-    // ini_set("display_errors","On");
-    // error_reporting(E_ALL);
-    // require_once("php/mysql.php");
-
-    // $mysql = new MySQLPDO();
-    // $mysql->connect();
-
-    // $result = $mysql->query("SELECT * FROM cliente");
-
-    // foreach ($result as $key => $value) {
-    //     print_r($value);
-    // }
     session_start(); 
-    // $_SESSION["USER"] = "jesus";
-    if (isset($_SESSION["USER"]) || false){ 
+    require('core/core.php');
+    require('php/config.php');
+    
+    $mysql2 = new Configuracion;
+    
+    $mysql = $mysql2->connect();
+
+    if (isset($_POST['user']) && isset($_POST['pass'])) {
+            $sql = "SELECT * FROM user WHERE user=? AND pass=?";
+            $res = $mysql->prepare($sql);
+
+            $res->execute(array($_POST['user'],$_POST['pass']));
+
+            if ($res) {
+                 foreach ($res as $value) {
+                    $_SESSION["USER"] = $value['user'];
+                }
+            }else{
+                echo "No Se encpontro usuario";
+            }
+    }
+   
+   
+    
+    
+    if (isset($_SESSION["USER"])){ 
          if (isset($_GET['view'])) {
             if (file_exists('core/views/'.strtolower($_GET['view']).'/index.php')) {
                include ('core/views/'.strtolower($_GET['view']).'/index.php');

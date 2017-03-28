@@ -10,7 +10,7 @@
                       <i class="fa fa-user" aria-hidden="true"></i>
                     </div>
                     <div class="divForm">
-                      <form class="formSession">
+                      <form class="formSession" action="index.php" method="POST">
                         <input type='text' class="inputSession" name="user" placeholder='Usuario'>
                         <input type='password' class="inputSession" name="pass" placeholder='Contraseña'>
                         <inpu class="check" type='checkbox'>
@@ -29,12 +29,12 @@
 <script type="text/javascript">
     $(document).ready(function(){
 
-        $.ajax({
-          type: "POST",
-          data: $("#session").serialize(),
-          url: '_DIR'+'session/session.php',
-        }).done(function(res){
-            alert(res);
-        });
+        // $.ajax({
+        //   type: "POST",
+        //   data: $("#session").serialize(),
+        //   url: index.php,
+        // }).done(function(res){
+        //     alert(res);
+        // });
     });
 </script>

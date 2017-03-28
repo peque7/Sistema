@@ -1,8 +1,8 @@
 <?php
-	class Configuracion{
+	class Configuracion {
 
 		// protected $datahost;
-		public function connect(){
+		public connect(){
 
 			if (!$ajustes = parse_ini_file('configuracion.ini', true)) throw new exception ('Que crees No puede abrir el archivo perdon :( pero ayudame revisando la direccion del archivo' . $archivo . '.');
 			$controlador = $ajustes["database"]["driver"]; //controlador (MySQL la mayoría de las veces)

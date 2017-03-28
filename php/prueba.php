@@ -13,7 +13,7 @@ require_once("class.consultas.php");
 
 /* Para consultar Personas */
 try {
-	$oConectar = new conectorDB;
+	$oConectar = new conectar;
 	if ($oConectar) {
 		$consulta = "SELECT * FROM cliente";
 
